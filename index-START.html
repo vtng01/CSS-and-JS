@@ -16,6 +16,9 @@
 
     <label for="base">Base Color</label>
     <input id="base" type="color" name="base" value="#ffc600">
+
+    <!--<label for="hex">Colour Code:</label>
+    <p id="colour"></p> -->
   </div>
 
   <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
@@ -67,6 +70,8 @@
     function handleUpdate(){
       const suffix = this.dataset.sizing || '';
       document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+      
+      //ocument.getElementById('colour').innerHTML = base.value;
 
     }
 
